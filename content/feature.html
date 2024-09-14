@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Footer</title>
+    <style>
+                 /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body background color */
+        body {
+            background-color: #030617;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        /* Footer styling */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0; /* Reduced padding for smaller footer */
+            background-color: rgba(0, 0, 0, 0.5); /* Opacity 50% */
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+            z-index: 1; /* Ensure footer is on top */
+            border-radius: 15% 15% 0 0; /* Rounded top corners */
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1000px; /* Adjust max width as needed */
+        }
+
+        .footer-left,
+        .footer-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column; /* Stack icon and text vertically */
+            align-items: center;
+        }
+
+        .footer-center {
+            display: flex;
+            flex-direction: column; /* Stack icon and text vertically */
+            align-items: center;
+        }
+
+        .footer-left img,
+        .footer-right img,
+        .footer-center img {
+            width: 30px; /* Adjust size as needed */
+            height: 30px;
+            margin-bottom: 5px; /* Spacing between icon and text */
+        }
+
+        .footer-left p,
+        .footer-right p,
+        .footer-center p {
+            font-size: 12px; /* Adjust size as needed */
+            color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Other content here -->
+
+    <!-- Footer with custom SVG icons and links -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://www.example.com/workout" target="_blank">
+                    <img src="img/workout.svg" alt="Workout">
+                    <p>Workout</p>
+                </a>
+            </div>
+            <div class="footer-center">
+                <a href="https://www.example.com/home" target="_blank">
+                    <img src="img/home.svg" alt="Home">
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.example.com/feature" target="_blank">
+                    <img src="img/feature.svg" alt="Feature">
+                    <p>Feature</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
